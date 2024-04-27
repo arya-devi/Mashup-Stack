@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MachineTest</title>
+</head>
+<body>
+<h1>Machine test</h1>
+<h3>1)Table</h3>
+<table border="1px">
+   <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Status</th>
+   </tr>
+   <tr>
+      <td>Sreenath</td>
+      <td>America</td>
+      <td>Active</td>
+   </tr>
+       <td>Vijay</td>
+      <td>Japan</td>
+      <td>Inactive</td>
+   </tr>
+       <td>Robin</td>
+      <td>London</td>
+      <td>Active</td>
+   </tr>
+       <td>Arya</td>
+      <td>Kerala</td>
+      <td>Active</td>
+   </tr>
+</table>
+<h3>2)Image Tag</h3>
+<img src="https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?cs=srgb&dl=pexels-pixabay-326900.jpg&fm=jpg" alt="bird" height="300px" width="400px">
+<h3>3)Link that opens in same tab</h3>
+<a href="https://www.mashupstack.com/placements" target="_self">Click me</a>
+<h3>4)Link that open in a new tab</h3>
+<a href="https://www.mashupstack.com/placements" target="_blank">Click here</a>
+<h3>5)Image as link</h3>
+<a href="https://www.flipkart.com/" target="_blank"><img src="https://cdn.pixabay.com/photo/2016/06/29/16/53/click-here-button-1487274_1280.png" width="200px" height="200px"></a>
+<h3>6)Adding youtube Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=zlvnGE2I-oMKZGgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h3>7)Important Html entities</h3>
+<p>&copy; 2007-2024 Flipkart.com</p>
+<p>&lt;h1&gt;is an h1 tag</p>
+<h3>8)Forms</h3>
+<h3>Login form horizontal</h3>
+<form>
+   <label for="name">User Name</label>
+   <input type="text" id="name" name="name">
+   <label for="password">Password</label>
+   <input type="password" id="password" name="password">
+   <input type="submit" name="" value="Login">
+</form>
+<h3>Login form vertical</h3>
+<form>
+   <label for="name">User Name</label><br>
+   <input type="text" id="name" name="name"><br>
+   <label for="password">Password</label><br>
+   <input type="password" id="password" name="password"><br><br>
+   <input type="submit" name="" value="Login">
+</form>
+<h3>9)Sign up form</h3>
+<form>
+   <input type="text" name="" placeholder="Username">
+   <input type="password" name="" placeholder="Password">
+   <input type="password" name="" placeholder="Conform password">
+   <input type="submit" name="" value="Sign up">
+</form>
+<h3>10)Contact us form for a mobile shop</h3>
+<form>
+   <label for="fullname">FullName</label><br>
+   <input type="text" id="fullname" name="fullname"><br><br>
+   <label for="mobile">Mobile Number</label><br>
+   <input type="number" id="mobile" name="mobile"><br><br>
+   <label>Type of Message</label><br>
+   <select>
+      <option>--Select--</option>
+      <option>sales</option>
+      <option>service</option>
+      <option>enquire</option>
+      <option>other</option>
+   </select><br><br>
+   <label>Description</label><br>
+   <textarea></textarea><br>
+   <input type="submit" name="" value="Submit">
+</form>
+<h3>11)A form with mandatory and optional fields</h3>
+<form>
+<label for="fullname">Full Name</label><br>
+<input type="text" id="fullname" name="fullname" required><br><br>
+<label for="age">Age</label><br>
+<input type="number" id="age" name="age"><br><br>
+<label>Gender</label><br>
+<input type="radio" name="gender" required>Male<br>
+<input type="radio" name="gender">Female<br>
+<input type="Submit" name="" value="Submit">
+</form>
+<h3>12)A form with GET method</h3>
+<form method="GET">
+   <input type="text" name="keyword" id="keyword" placeholder="Enter the search term">
+   <input type="submit" name="" value="Search">
+</form>
+<h3>13)A form with POST method</h3>
+<form method="POST">
+   <label for="password">New Password</label><br>
+   <input type="password" name="password" id="password" placeholder="Enter the new password"><br><br>
+   <label for="confirm">Confirm Password</label><br>
+   <input type="password" name="conform" id="confirm" placeholder="Confirm the new password"><br><br>
+   <input type="submit" name="" value="Change Password">
+</form>
+<h3>14)Complaint Booking Form</h3>
+<form>
+   <label for="fullname">Name:</label><br>
+   <input type="text" name="fullname" id="fullname"><br><br>
+   <label for="mobile">Mobile:</label><br>
+   <input type="number" name="mobile" id="mobile"><br><br>
+   <label for="complaint">Complaint Type:</label><br>
+   <select name="complaint" id="complaint">
+      <option>Billing related</option>
+     <option>Meter related</option>
+     <option>Power related</option>
+     <option>Voltage related</option>
+     <option>Other</option>
+   </select><br><br>
+   <label>Problem Description</label><br>
+   <textarea name="description" id="description"></textarea><br><br>
+   <label>Address</label><br>
+   <textarea name="address" id="address"></textarea><br><br>
+   <button name="submit" id="submit">Submit</button>
+</form>
+<h3>15)Movie Ticket Booking Form</h3>
+<form>
+   <label for="fullname">Full Name</label><br>
+   <input type="text" name="fullname" id="fullname" minlength="3" maxlength="50"><br><br>
+   <label for="movie">Movie Name</label><br>
+   <select name="movie" id="movie">
+      <option>Avengers</option>
+      <option>Spiderman</option>
+   </select><br><br>
+   <label for="slot">Movie Time Slot</label><br>
+   <select name="slot" id="slot">
+      <option>1.00pm</option>
+      <option>4.00pm</option>
+      <option>7.00pm</option>
+      <option>10.00pm</option>
+   </select><br><br>
+   <label for="seat">No.of Seats</label><br>
+   <select name="seat" id="seat">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+   </select><br><br>
+   <label for="popcorn">Add popcorn during intervel</label><br>
+   <input type="checkbox" name="popcorn" id="popcorn"><br><br>
+   <label for="drinks">Add Coke during interval</label><br>
+   <input type="checkbox" name="drinks" id="drinks"><br><br>
+   <label for="address">Address</label><br>
+   <textarea name="address" id="address"></textarea><br><br>
+   <input type="submit" name="" value="Book Ticket">
+</form>
+</body>
+</html>
